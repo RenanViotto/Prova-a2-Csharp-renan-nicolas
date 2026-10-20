@@ -1,0 +1,26 @@
+### Cadastrar folha
+POST http://localhost:5008/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Natan",
+    "cpf": "123.456.788-00",
+    "mes": 7,
+    "ano": 2025,
+    "horasTrabalhadas": 160,
+    "valorHora": 50
+}
+
+### Listar folha
+GET http://localhost:5008/api/folha/listar
+
+### Buscar folha por cpf, mes e ano
+GET http://localhost:5008/api/folha/buscar/123.456.789-00/10/2025
+
+### Total liquido
+GET http://localhost:5008/api/folha/total-liquido
+
+### Remover folha
+
+DELETE http://localhost:5008/api/folha/remover/123.456.789-00/10/2025
+
